@@ -1,0 +1,17 @@
+<h2>{{member.last_name}}</h2>
+{% for member in instance.members.all %}
+<div class="col-4">
+    <div class="card">
+        <img src="{{member.picture.url}}" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{member.first_name}}{{member.last_name}}</h5>
+            <p class="card-text font-italic">{{member.role}}</p>
+            <div class="iconeProfile">
+                <a href="{{member.twitter}}"><i class="fab fa-twitter"></i></a>
+                <a href="{{member.facebook}}"><i class="fab fa-facebook-f"></i></a>
+                <a href="{{member.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

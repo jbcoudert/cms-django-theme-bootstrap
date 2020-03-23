@@ -1,0 +1,250 @@
+header {
+  background: url(https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/img/header-bg.jpg?raw=true);
+  background-size: cover;
+  background-position: center;
+  height: 90vh; }
+  header nav a {
+    text-decoration: none;
+    color: yellow; }
+    header nav a:hover {
+      color: yellow; }
+  header nav #navbarNav a {
+    text-decoration: none;
+    color: white; }
+    header nav #navbarNav a:hover {
+      color: yellow; }
+  header #subNav {
+    color: white;
+    height: 70vh; }
+    header #subNav h1 {
+      font-size: 4rem;
+      font-weight: bolder; }
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none; }
+  .timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: lightgray; }
+  .timeline > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px; }
+    .timeline > li:after, .timeline > li:before {
+      display: table;
+      content: ' '; }
+    .timeline > li:after {
+      clear: both; }
+    .timeline > li .timeline-panel {
+      position: relative;
+      float: right;
+      width: 100%;
+      padding: 0 20px 0 100px;
+      text-align: left; }
+      .timeline > li .timeline-panel:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0; }
+      .timeline > li .timeline-panel:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0; }
+    .timeline > li .timeline-image {
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      margin-left: 0;
+      text-align: center;
+      color: white;
+      border: 7px solid lightgray;
+      border-radius: 100%;
+      background-color: lightskyblue; }
+      .timeline > li .timeline-image h4 {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 12px; }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      float: right;
+      padding: 0 20px 0 100px;
+      text-align: left; }
+      .timeline > li.timeline-inverted > .timeline-panel:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0; }
+      .timeline > li.timeline-inverted > .timeline-panel:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0; }
+    .timeline > li:last-child {
+      margin-bottom: 0; }
+  .timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit; }
+    .timeline .timeline-heading h4.subheading {
+      text-transform: none; }
+  .timeline .timeline-body > ul,
+  .timeline .timeline-body > p {
+    margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%; }
+  .timeline > li {
+    min-height: 100px;
+    margin-bottom: 100px; }
+    .timeline > li .timeline-panel {
+      float: left;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: right; }
+    .timeline > li .timeline-image {
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px; }
+      .timeline > li .timeline-image h4 {
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 16px; }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      float: right;
+      padding: 0 30px 20px 20px;
+      text-align: left; } }
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px; }
+    .timeline > li .timeline-panel {
+      padding: 0 20px 20px; }
+    .timeline > li .timeline-image {
+      width: 150px;
+      height: 150px;
+      margin-left: -75px; }
+      .timeline > li .timeline-image h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 30px; }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 20px 20px; } }
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px; }
+    .timeline > li .timeline-panel {
+      padding: 0 20px 20px 100px; }
+    .timeline > li .timeline-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px; }
+      .timeline > li .timeline-image h4 {
+        margin-top: 40px; }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 100px 20px 20px; } }
+main {
+  margin: 5rem 0 0 0; }
+  main h2 {
+    font-weight: bolder; }
+  main .card {
+    border: none; }
+  main .row {
+    padding: 5rem 0; }
+  main #Portfolio {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center; }
+    main #Portfolio .portfolio {
+      width: 75%;
+      margin: auto; }
+    main #Portfolio .card {
+      margin: 1rem;
+      text-align: center; }
+  main #Services {
+    width: 75%;
+    margin: auto; }
+    main #Services .card {
+      padding: 2rem; }
+      main #Services .card i {
+        font-size: 4rem;
+        padding: 2rem;
+        border-radius: 50%;
+        background-color: yellow;
+        color: white; }
+      main #Services .card h5 {
+        font-weight: bolder; }
+  main #Team {
+    background-color: #f8f9fa; }
+    main #Team .team {
+      width: 75%;
+      margin: auto; }
+    main #Team .card {
+      margin: 0 1rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main #Team .card img {
+        border-radius: 50%;
+        width: 60%; }
+      main #Team .card .iconeProfile {
+        display: flex;
+        justify-content: center; }
+  main #contact {
+    background-image: url(https://www.itl.cat/pngfile/big/95-959373_dual-monitor-wallpapers-world-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: white; }
+    main #contact .title {
+      margin-top: 4rem; }
+    main #contact input {
+      padding: 1.8rem;
+      margin: 0.5rem 0.5rem 0.5rem auto;
+      width: 75%; }
+    main #contact textarea {
+      padding: 1.8rem;
+      margin: 0.5rem;
+      width: 75%;
+      height: 23vh; }
+    main #contact a {
+      width: 15vw;
+      height: 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bolder;
+      color: white;
+      font-size: 1.2rem; }
+
+footer {
+  margin: 1rem auto;
+  text-align: center;
+  width: 75%;
+  vertical-align: middle; }
+  footer .col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .col-4 p {
+      margin: 0; }
+
+i {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  margin: 0 0.2rem; }
+  i:hover {
+    background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

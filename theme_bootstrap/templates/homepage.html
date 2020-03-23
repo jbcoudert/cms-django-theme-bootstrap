@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load cms_tags static menu_tags sekizai_tags %}
+{% load cms_tags %}
+
+{% block content %}
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">{% placeholder 'Name of Site' %}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">{% placeholder 'Menu1'%}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% placeholder 'Menu2'%}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% placeholder 'Menu3'%}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% placeholder 'Menu4'%}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% placeholder 'Menu5'%}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="subNav" class="d-flex flex-column align-items-center justify-content-center">
+        <h2>Welcome To our Studio!</h2>
+        <h1>IT'S NICE TO MEET YOU</h1>
+        <a href="#" class="btn btn-warning">Tell me more</a>
+    </div>
+</header>
+
+<main>
+    <div id="Services" class="row no-gutters">
+        <div class="col-12 text-center">
+            <h2>SERVICES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="col-4">
+            {% placeholder 'Card1 Services'%}
+            <!-- <div class="card">
+                <div class="roundTop text-center"><i class="fas fa-shopping-cart"></i></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">E-Commerce</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="col-4">
+            {% placeholder 'Card2 Services'%}
+            <!-- <div class="card">
+                <div class="roundTop text-center"><i class="fas fa-laptop"></i></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Responsive Design</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="col-4">
+            {% placeholder 'Card3 Services'%}
+            <!-- <div class="card">
+                <div class="roundTop text-center"><i class="fas fa-lock"></i></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Web Security</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="Portfolio"> <!-- Début PORTFOLIO -->
+        <div class="portfolio row no-gutters">
+
+            <div class="col-12 text-center">
+                <h2>PORTFOLIO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../../media/01-thumbnail.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Threads</h5>
+                        <p class="card-text font-italic">Illustration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../../media/02-thumbnail.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Explore</h5>
+                        <p class="card-text font-italic">Graphic Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../../media/03-thumbnail.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Finish</h5>
+                        <p class="card-text font-italic">Identity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../../media/04-thumbnail.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lines</h5>
+                        <p class="card-text font-italic">Branding</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../../media/05-thumbnail.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Southwest</h5>
+                        <p class="card-text font-italic">Website Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../../media/06-thumbnail.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Window</h5>
+                        <p class="card-text font-italic">Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="About" class="row no-gutters"> <!-- Début About -->
+        <div class="col-12 text-center">
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        {% placeholder 'testtimeline' %}
+    </div>
+    <div id="Team"> <!-- Début Team -->
+        <div class="team row no-gutters">
+            <div class="col-12 text-center">
+                <h2>OUR AMAZING TEAM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            {% placeholder 'team mate'%}
+            <div class="col-12 w-50 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis inventore dolorem
+                aperiam ratione odio deserunt tempore, pariatur soluta laudantium quo placeat repellendus.
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="row no-gutters">
+        <div class="col-12 text-center title">
+            <h2>CONTACT US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="col-6">
+            <input type="email" class="form-control" placeholder="Your Name *">
+            <input type="email" class="form-control" placeholder="Your Email *">
+            <input type="email" class="form-control" placeholder="Your Phone *">
+        </div>
+        <div class="col-6">
+            <textarea class="form-control" placeholder="Your Message *" rows="3"></textarea>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <a href="#" class="btn btn-warning">SEND MESSAGE</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="row no-gutters">
+        <div class="col-4">
+            <p>Copyright © Your Website 2019</p>
+        </div>
+        <div class="col-4">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="col-4">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </div>
+</footer>
+{% endblock %}

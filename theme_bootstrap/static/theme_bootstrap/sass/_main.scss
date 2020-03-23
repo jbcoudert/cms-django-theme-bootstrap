@@ -1,0 +1,133 @@
+main {
+    margin: 5rem 0 0 0;
+    h2 {
+        font-weight: bolder;
+    }
+    .card {
+        border: none;
+    }
+    .row {
+        padding: 5rem 0;
+    }
+    #Portfolio {
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        .portfolio {
+            width: 75%;
+            margin: auto;
+        }
+        .card {
+            margin: 1rem;
+            text-align: center;
+        }
+    }
+
+    #Services {
+        width: 75%;
+        margin: auto;
+        .card {
+            padding: 2rem;
+            
+            i {
+                font-size: 4rem;
+                padding: 2rem;
+                border-radius: 50%;
+                background-color: yellow;
+                color: white;
+            }
+            h5 {
+                font-weight: bolder;
+            }
+        }
+    }
+
+    #About {
+
+    }
+
+    #Team {
+        background-color: #f8f9fa;
+        .team {
+            width: 75%;
+            margin: auto;
+        }
+        .card {
+            margin: 0 1rem;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                border-radius: 50%;
+                width: 60%;
+                
+            }
+            .iconeProfile {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    
+    }
+    
+
+    #contact {
+        background-image: url(https://www.itl.cat/pngfile/big/95-959373_dual-monitor-wallpapers-world-map.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+        color: white;
+        .title {
+            margin-top: 4rem;
+        }
+        input{
+            padding: 1.8rem;
+            margin: 0.5rem 0.5rem 0.5rem auto;
+            width: 75%;
+        }
+        textarea {
+            padding: 1.8rem;
+            margin: 0.5rem;
+            width: 75%;
+            height: 23vh;
+        }
+        a {
+            width: 15vw;
+            height: 5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+footer {
+    margin: 1rem auto;
+    
+    text-align: center;
+    width: 75%;
+    vertical-align: middle;
+    .col-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: 0;
+        }
+    }
+    
+}
+i {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin: 0 0.2rem;
+    &:hover {
+        background-color: yellow;
+    }
+}
