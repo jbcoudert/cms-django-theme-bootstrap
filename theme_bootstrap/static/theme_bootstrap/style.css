@@ -226,6 +226,15 @@ main {
       color: white;
       font-size: 1.2rem; }
 
+i {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  margin: 0 0.2rem; }
+  i:hover {
+    background-color: yellow; }
+
 footer {
   margin: 1rem auto;
   text-align: center;
@@ -237,14 +246,5 @@ footer {
     align-items: center; }
     footer .col-4 p {
       margin: 0; }
-
-i {
-  padding: 1rem;
-  background-color: black;
-  color: white;
-  border-radius: 50%;
-  margin: 0 0.2rem; }
-  i:hover {
-    background-color: yellow; }
 
 /*# sourceMappingURL=style.css.map */

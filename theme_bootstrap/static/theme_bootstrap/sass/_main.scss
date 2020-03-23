@@ -105,29 +105,4 @@ main {
     }
 }
 
-footer {
-    margin: 1rem auto;
-    
-    text-align: center;
-    width: 75%;
-    vertical-align: middle;
-    .col-4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        p {
-            margin: 0;
-        }
-    }
-    
-}
-i {
-    padding: 1rem;
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    margin: 0 0.2rem;
-    &:hover {
-        background-color: yellow;
-    }
-}
+
